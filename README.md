@@ -1,2 +1,2 @@
 # LinguaMates
-This project aims to implement an “Online Language Exchange and Learning Platform”. This platform connects language learners with native speakers for mutual language practice and cultural exchange. The following two users are involved in the application:
+This project aims to implement an “Online Language Exchange and Learning Platform”. This platform connects language learners with native speakers for mutual language practice and cultural exchange. Users embark on a thrilling journey of linguistic discovery as they connect with native speakers worldwide. make new friends, and unleash linguistic potential in the most exciting way possible, with a dynamic and engaging platform.
