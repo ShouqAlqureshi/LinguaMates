@@ -200,7 +200,6 @@ form {
   justify-content: center;
   flex-direction: column;
   padding: 7% 5rem;
-  transition: all 0.2s 0.7s;
   overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;

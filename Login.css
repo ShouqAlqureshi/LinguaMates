@@ -150,9 +150,8 @@ header .topPage {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  left: 75%;
+  left: 65%;
   width: 50%;
-  transition: 1s 0.7s ease-in-out;
   display: grid;
   grid-template-columns: 1fr;
   z-index: 5;
@@ -163,8 +162,7 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0rem 5rem;
-  transition: all 0.2s 0.7s;
+  padding: 7% 5rem;
   overflow: hidden;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -253,12 +251,14 @@ form.sign-in-form {
 
 .btn {
   display: inline-block;
-  padding: 0.9rem 1.9rem;
+  padding: .9rem .9rem;
   color: #ffffff ;
   background-color: #64bcf4;
   border-radius: 16px;
   text-transform: capitalize;
   transition: 0.3s;
+  border: none; /* Remove the border */
+
 }
 
 .btn:hover {
@@ -282,13 +282,16 @@ form.sign-in-form {
   height: 2000px;
   width: 2000px;
   top: -10%;
-  right: 55%;
+  right: 53%;
   transform: translateY(-60%);
   background-image: linear-gradient(-45deg, #f4f7f9 0%, #f1f8fc 100%);
   transition: 1.8s ease-in-out;
   border-radius: 70%;
   z-index: 6;
 }
+
+
+
 
 .image {
   width: 100%;
@@ -308,4 +311,20 @@ form.sign-in-form {
 .left-panel {
   pointer-events: all;
   padding: 3rem 37% 2rem 12%;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: .4rem .2rem;
+  color: #ffffff ;
+  background-color: #64bcf4;
+  border-radius: 16px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  font-size: 13px;
+}
+
+.btn1:hover {
+  background-color:#5bacdf;
+  transform: scale(1) ;
 }
