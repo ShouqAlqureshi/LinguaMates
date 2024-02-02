@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+.light {
+  --mainColor: #64bcf4;
+  --hoverColor: #5bacdf;
+  --backgroundColor: #f1f8fc;
+  --darkOne: #312f3a;
+  --darkTwo: #45424b;
+  --lightOne: #919191;
+  --lightTwo: #aaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.big-wrapper {
+    position: relative;
+    padding: 1.7rem 0 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.topPage {
+  position: relative;
+  max-width: 81rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+  z-index: 10;
+}
+
+header {
+  position: relative;
+  z-index: 70;
+}
+
+header .topPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 0.6rem;
+  margin-top: -0.6rem;
+}
+
+.logo h3 {
+  color: var(--darkTwo);
+  font-size: 1.55rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.links a {
+  color: #919191;
+  margin-left: 4.5rem;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: var(--hoverColor);
+  transform: scale(1.05);
+}
+
+
+
+.hamburger-menu {
+  position: relative;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu .bar {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--darkTwo);
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 110vh;
+  overflow: hidden;
+}
+
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  left: 54%;
+  width: 100%;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  max-width: 900px; /* Set a maximum width if necessary */
+  margin:initial; /* Center the container on the page */
+
+}
+
+.input-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 55px;
+  padding: 0 0.4rem;
+  height: 100%;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #aaa;
+  font-weight: 400;
+    outline: none;
+}
+
+.input-field select::placeholder {
+  color: #aaa;
+  font-weight: 800;
+}
+
+.input-field select:hover,
+.input-field select:focus {
+  background-color: #d3d1d1;
+  
+}
+
+.input-field select option {
+  background-color: #f0f0f0;
+  color:var(--darkTwo);
+  font-weight: 400;
+  border-radius: 20px;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7% 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #45424b;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 280px;
+  width: 100%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field ::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: .9rem .9rem;
+  color: #ffffff ;
+  background-color: #64bcf4;
+  border-radius: 16px;
+  text-transform: capitalize;
+  transition: 0.3s;
+  border: none; /* Remove the border */
+
+}
+
+.btn:hover {
+  background-color:#5bacdf;
+  transform: scale(1) ;
+}
+
+.panels-container {
+  position: absolute;
+  height: 80%;
+  width: 200%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    height: 2000px;
+    width: 2000px;
+    top: -10%;
+    right: 55%;
+    transform: translateY(-60%);
+    background-image: linear-gradient(-45deg, #f4f7f9 0%, #f1f8fc 100%);
+    border-radius: 70%;
+    z-index: 6;
+  }
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 7rem 68% 77rem 4%;
+}
+
+.file-input  {
+bottom: 32%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    width: 179px; /* Set a fixed width for a square shape */
+    height: 180px; /* Set a fixed height for a square shape */
+    border-radius: 20px; /* Adjust the border-radius based on your design */
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position:relative;
+    margin-left: 365px; /* Add this to move the file input to the right */
+border-radius: 300%;
+  }
+  
+ 
+  
+  .file-input input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 1.1rem;
+    color: #333;
+    height: 00%; /* Ensure the input takes full height */
+  }
+  
+  .file-input input::placeholder   {
+    color: #aaa;
+    font-weight: 400;
+  }
+  
+  .file-input label {
+    display: block;
+    padding-left: 23px;
+    line-height: 29px;
+    cursor: pointer;
+    width: 200px; /* Adjust the width to your preference, e.g., 90% */
+  }
+  
+
+  
+  .file-input .profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .file-input .profile-name {
+    margin-top: 170px;
+    color: var(--darkTwo);
+    font-size: 18px;
+  }
+ 
+
+  .file-input .photo-container {
+    position: relative;
+    left: 40px; /* Adjust the left property to move the container (and the icon) to the right */
+  }
+  
+  .file-input i {
+    text-align: center;
+    line-height: 180px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 7rem;
+    vertical-align: -.075em;
+  }
+  
+  
+
+.bio-input {
+  bottom: 28%;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  width: 230px;
+  height: 270px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: absolute;
+  margin-left: 73%;
+}
+
+.bio-input textarea {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #333;
+  resize: none;
+  height: 100%;
+  width: 220px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.bio-input textarea::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.bio-field i {
+  text-align: center;
+  line-height: 260px; /* Adjust line-height for vertical alignment */
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
