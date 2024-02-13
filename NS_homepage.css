@@ -1,0 +1,61 @@
+.menucontainer{
+    position:relative;
+    display: grid;
+    place-items: center;
+   
+    top:10%;
+    
+
+}
+.menu{
+    list-style:none;
+    margin: 30px;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transition:  opacity 0.5s ease-in-out, visibility 1s ease-in-out 0.3s;
+    transform: translateX(0);
+    background-color:#5bacdf ; /* Background color of the dropdown */
+    width: 160px;
+    height: 30px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+
+}
+
+.menu li{
+    padding: 20%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10%;
+}
+#avatar{
+    position: relative;
+    right: 20px;
+    margin-bottom:50px;
+    width: 200px;
+    height: 150px;
+    
+    
+}
+#avatar img{
+    width: 80px;
+    height: 80px;
+}
+
+
+#Sessions:hover ~ .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.menu li:hover{
+    color: #5bacdf;
+}
+
+.footer {
+    margin-top: 50px; /* Adjust this value as needed */
+  }

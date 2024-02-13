@@ -26,9 +26,7 @@ body {
   overflow: hidden;
 }
 
-img {
-  width: 100%;
-}
+
 
 a {
   text-decoration: none;
@@ -801,9 +799,49 @@ select {
   margin-top: 10px;
   font-family: "Poppins", sans-serif;
   outline: 0; 
-  background: #89a4b5;
+  background-color: #cde0eb;
   color: rgb(12, 1, 1); 
-  border: 1px solid rgb(127, 126, 134);
+  border: 0px;
   padding: 4px;
   border-radius: 20px 20px 20px 20px;                     
 }      
+.requestsboard table{
+  background-color: #5bacdf;
+  border-radius: 20px 20px 20px 20px;
+  border-style:none;
+  justify-content: flex;
+  margin:200px;
+  margin-top:50px;
+  display: grid;
+  place-items: center;
+} 
+td,th{
+  margin: 20px;
+  padding: 50px;
+}
+
+#catigory th{
+  padding: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.requestIcon{
+  width: 50px;
+  height: 50px;
+}
+h1{
+  display: grid;
+  place-items: center;
+  margin-top:10px;
+}
+
+#All {
+  
+}
+.incoming {
+  background-color:#b8ccd8;
+  width:20;
+  height: 20px;
+  border-radius: 20px 20px 20px 20px;
+}
