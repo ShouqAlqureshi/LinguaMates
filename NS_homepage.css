@@ -2,14 +2,16 @@
     position:relative;
     display: grid;
     place-items: center;
-   
     top:10%;
     
 
 }
 .menu{
+    display: flex;
     list-style:none;
     margin: 30px;
+    width:800px;
+    margin-top: 100px;
 }
 
 .dropdown {
@@ -18,8 +20,6 @@
     transition:  opacity 0.5s ease-in-out, visibility 1s ease-in-out 0.3s;
     transform: translateX(0);
     background-color:#5bacdf ; /* Background color of the dropdown */
-    width: 160px;
-    height: 30px;
     display: flex; /* Use flexbox */
     align-items: center; /* Align items vertically */
     justify-content: center; /* Center items horizontally */
@@ -32,20 +32,28 @@
     border-radius: 10px 10px 10px 10px;
     text-align: center;
     margin: 10%;
+    width: 160px;
+    height: 60px;
+    
 }
 #avatar{
     position: relative;
     right: 20px;
     margin-bottom:50px;
-    width: 200px;
-    height:200px;
-    border-radius: 200px 200px 200px 200px ;
-    
+    width: 100px;
+    height:100px;
+    padding: 150px;
+    border-radius: 200px ;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
     
 }
+
 #avatar img{
     width: 80px;
     height: 80px;
+    margin-right: 20px
 }
 
 
@@ -57,6 +65,6 @@
     color: #5bacdf;
 }
 
-.footer {
-    margin-top: 50px; /* Adjust this value as needed */
+.footerContainer {
+    margin-top: 200px; /* Adjust this value as needed */
   }
