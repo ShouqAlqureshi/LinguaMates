@@ -81,9 +81,9 @@ header .container {
 }
 
 .logo img {
-  width: 40px;
-  margin-right: 0.6rem;
-  margin-top: -0.6rem;
+  width: 280px;
+  margin-right: -20px;
+  margin-top: -5px;
 }
 
 .logo h3 {
@@ -168,20 +168,20 @@ header .container {
 }
 
 footer{
-  background-color: #f1f8fc;
+  text-align: center;
+  bottom: 0;
   width: 100%;
-  padding: 0px 30px 20px;
-}
+  background-color: #f1f8fc;
+  padding: 20px 0; 
+  font-size: 14px;}
 
 .socialicon{
   display:flex ;
+  margin-bottom: 10px;
   justify-content: center;
 }
 .socialicon a{
-  text-decoration: none;
-  padding: 5px;
-  margin: 10px;
-  border-radius: 90%;
+  margin: 0 5px;
 }
 
 .socialicon a i{
@@ -207,6 +207,7 @@ footer{
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin-top: -10px; 
 
 }
 
@@ -231,7 +232,7 @@ background-color: #f1f8fc;
 }
 
 .footerBottom p{
-  color: #aaa;
+  color: #f1f8fc;
 }
 
 @media (max-width: 700px){
