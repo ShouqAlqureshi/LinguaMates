@@ -1,0 +1,113 @@
+.menucontainer{
+    position:relative;
+    display: grid;
+    place-items: center;
+    top:10%;
+    
+
+}
+.menu{
+    display: flex;
+    list-style:none;
+    margin: 30px;
+    width:800px;
+    margin-top: 100px;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    transition:  opacity 0.5s ease-in-out, visibility 1s ease-in-out 0.3s;
+    transform: translateX(0);
+    background-color:#5bacdf ; /* Background color of the dropdown */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+
+}
+
+.menu li{
+    padding: 20%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 10%;
+    width: 160px;
+    height: 60px;
+    
+}
+#avatar{
+    position: relative;
+    right: 20px;
+    margin-bottom:50px;
+    width: 100px;
+    height:100px;
+    padding: 150px;
+    border-radius: 200px ;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    
+}
+
+#avatar img{
+    width: 80px;
+    height: 80px;
+    margin-right: 20px
+}
+
+
+#Sessions:hover ~ .dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+.menu li:hover{
+    color: #5bacdf;
+}
+
+.footerContainer {
+    margin-top: 200px; /* Adjust this value as needed */
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+h2.aboutusTitle {
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.5s transform 0.2s ; 
+    
+}
+h2:hover {
+    color:  #5bacdf; 
+    transform: translateY(0)  /* Move the header up slightly on hover */
+}
+
+h2:active {
+    transform: translateY(0)  /* Reset the transform when clicked */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.aboutlanguageMate {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mainsec {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
