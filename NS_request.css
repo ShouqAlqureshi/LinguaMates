@@ -1,55 +1,52 @@
-
-/* .selection{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 50vh;
-  padding: 4px;
-  border-radius: 9px;
-  background-color: #e7e7f0;
-} */
-/* select {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  color: rgb(12, 1, 1); 
-  border: 0px;
-  padding: 4px;
-  border-radius: 20px 20px 20px 20px;                     
-}  */
-
 body {
-   margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
 }  
 .requestsboard {
-    display: flex;
-    justify-content: center;
+display: flex;
+justify-content: center;
 }
 
 table {
-    width: 100%; /* Adjust the width of the table as needed */
-    height: 400px;
-    border-collapse: collapse;
-    background-color: #5bacdf;
-    box-shadow: 0px 0px 10px #fff9f9;
-    margin-top: 20px;
+width: 100%;
+height: 400px;
+border-collapse: collapse;
+background-color: #5bacdf;
+box-shadow: 0px 0px 10px #fff9f9;
+margin-top: 20px;
 }
 
 th, td {
-    padding: 20px; /* Adjust padding for cells as needed */
-    text-align: left;
+padding: 20px;
+text-align:center;
 }
 
 th {
-    background-color: #EEEEEE;
-    color: #000000;
+  background-color: #EEEEEE;
+  color: #000000; 
+  font-size: large;
 }
 
 td {
-    background-color: #EEEEEE;
-    color: #000000;
+  background-color: #EEEEEE;
+  color: #000000;
+}
+#save-btn {
+  padding: 10px 14px;
+  background-color: #e7e7f0;
+  color: rgb(22, 46, 86);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+#save-btn:hover {
+  background-color: #5bacdf;
+  color: white; 
+  transform: scale(1.1);
+  border-radius: 50px;
 }
 
 #image{
@@ -59,20 +56,26 @@ td {
 }
 
 select {
-padding: 10px 14px;
-background-color: #e7e7f0;
-color: rgb(22, 46, 86);
-border: none;
-border-radius: 5px;
-cursor: pointer;
-font-size: 20px;
+  padding: 10px 14px;
+  background-color: #e7e7f0;
+  color: rgb(22, 46, 86);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-appearance: none;
+  transition: all 0.3s;
 }
 
 select:hover {
-background-color: #5bacdf; /* Change to desired hover background color */
-color: white; /* Change to desired hover text color */
+background-color: #5bacdf;
+color: white; 
+transform: scale(1.1);
+border-radius: 50px;
 }
-
+option{
+  text-align: center;
+}
 .requestIcon{
   width: 50px;
   height: 50px;
@@ -86,7 +89,7 @@ h1{
 
 #All {
   position: relative;
-  left:1050px;
+  left:1090px;
 }
 .incoming {
   background-color:#b8ccd8;
