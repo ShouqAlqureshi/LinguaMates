@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-        <title>lenguaMates</title>
-        <link rel="stylesheet" href="NS_request.css">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/9eeac525af.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="footer.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">      
+      <title>lenguaMates</title>
+      <link rel="stylesheet" href="NS_request.css">
     </head>
     <body>
+      <div class="big-wrapper light">
+  
         <header>
-            <div class="container">
+          <div class="container">
               <div class="logo">
-                <img src="logo.jpg" alt="Logo" />
-                <h3> Language Courses</h3>
-              </div>
-  
-              <div class="links">
-                <ul>
-                  <li><a href="#">Find tutor</a></li>
-                  <li><a href="#">Become a tutor</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Courses</a></li>
-                </ul>
-              </div>
-              <a href="Login.html" class="btn">Sign in</a></li>
-  
-              <div class="overlay"></div>
-  
-              <div class="hamburger-menu">
-                <div class="bar"></div>
-              </div>
+                  <a href="Homepage.html">
+                    <img src="logo.jpg" alt="Logo">
+                  </a>
+                  <h3>Language Courses</h3>
+                </div>
+                
+
+                <div class="links">
+                  <ul>
+                    <li>
+                      <a href="#Profile">
+                        <img src="user.jpg" alt="User" style="width: 60px; height: 60px;">
+                      </a>
+                    </li>
+                    <li><a href="Homepage.html">Sign out</a></li>
+                  </ul>
+                </div>
+                
+
+            <div class="overlay"></div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
             </div>
+          </div>
         </header>
-        <div class="showcase-area">
-        
+
         <!-- requests UI -->
         <div class="container">
             <h1>Requests</h1>
             <p id="All"><span class="selction">
               <select name="categories">
-              <option value="All">All</option>
-              <option value="accepted">accepted</option>
+              <option value="All" selected>All</option>
+              <option value="NS_homepage.html">accepted</option>
               <option value="declined">declined</option>
               <option value="waiting">waiting</option>
               </select>
@@ -64,7 +74,7 @@
                     <td>120 min</td> 
                     <td><span class="selction">
                       <select name="statues" id="lang">
-                      <option value="accept">accept</option>
+                      <option value="accept" selected>accept</option>
                       <option value="decline">decline</option>
                       <option value="waiting">waiting</option>
                       </select>
@@ -81,7 +91,7 @@
                     <td ><span class="selction">
                       <select name="statues">
                       <option value="accept">accept</option>
-                      <option value="decline">decline</option>
+                      <option value="decline"selected>decline</option>
                       <option value="waiting">waiting</option>
                       </select>
                     </span></td>
@@ -107,30 +117,31 @@
                
           </div>
       </div>
-         <!--Footer-->
-        <footer class="rsitterProfile"> 
-            <table class="tableF">
-                <tr>
-                    <th><a href="#"> FAQs </a></th>
-                    <th><a href="#"> Contact Us </a></th>
-                </tr>
-            </table>       
-              <div class="social-media">
-                <a href="https://facebook.com" class="social-icon">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://twitter.com" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon">
-                  <i class="fab fa-google"></i>
-                </a>
-                <a href="https://linkedin.com" class="social-icon">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
+        
+      
+      
+        <footer>
+          <div class="footerContainer">
+              <div class="socialicon">
+                <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=ar"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
               </div>
             </div>
-        </footer>
-
+            
+          <div class="footerNav">
+              <ul>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+              </ul>
+          </div>
+        
+        
+      </div>
+         </footer>
+    <div class="footerBottom">
+        <p>CopyRight &copy;2024;  </p>
+    </div>
     </body>
 </html
