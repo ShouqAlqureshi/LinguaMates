@@ -10,7 +10,7 @@
 position: relative;
 width: 500px;
 height: 420px;
-background-color: #919191;;
+background-color: rgb(204, 201, 201);;
 margin: 20px;
 border-radius: 20px;
 overflow: hidden;
@@ -55,7 +55,6 @@ border-radius: 50px;
     margin-top: 80px;
     text-align: center;
     font-size: larger;
-    text-shadow:2px 2px 5px #45424b;
 }
 a{
     color: inherit;
