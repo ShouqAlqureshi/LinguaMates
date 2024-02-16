@@ -72,6 +72,7 @@ body {
   color: white; 
   transform: scale(1.1);
   border-radius: 50px;
+
   }
   option{
     text-align: center;
@@ -100,3 +101,4 @@ body {
   .footerContainer {
     margin-top: 200px;
   }
+
