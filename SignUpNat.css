@@ -32,11 +32,11 @@ a {
   text-decoration: none;
 }
 
-.big-wrapper {
+.big-wrapper  {
     position: relative;
     padding: 1.7rem 0 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh !important;
     overflow: hidden;
     background-color: var(--backgroundColor);
     display: flex;
@@ -49,12 +49,10 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 3rem;
-  z-index: 10;
 }
 
 header {
   position: relative;
-  z-index: 70;
 }
 
 header .topPage {
@@ -108,7 +106,6 @@ header .topPage {
 
 .hamburger-menu {
   position: relative;
-  z-index: 99;
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -129,11 +126,11 @@ header .topPage {
 
 
 
-.container {
+.container1 {
   position: relative;
   width: 100%;
   background-color: #fff;
-  min-height: 150vh;
+  min-height: 20vh;
   overflow: hidden;
 }
 
@@ -141,23 +138,51 @@ header .topPage {
 .forms-container {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 80%;
+  top: 59%;
   left: 0;
 }
 
-.signin-signup {
+
+.panels-container {
   position: absolute;
+  height: 118%;
+  width: 49%;
+  top: 0;
+  left: 76px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.signup-phrases{
+  padding: 10px;
+}
+.btn {
+  padding: 10px 14px;
+  background-color: #e7e7f0;
+  color: rgb(22, 46, 86);
+  border: none;
+  border-radius: 50px;
+  font-size: 19px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #5bacdf;
+  color: white; 
+  transform: scale(1.1);
+  border-radius: 50px;
+}
+
+.signin-signup {
+  position: relative;
   top: 49%;
   transform: translate(-50%, -50%);
   left: 54%;
   width: 100%;
   transition: 1s 0.7s ease-in-out;
-  display: grid;
-  grid-template-columns: 1fr;
-  z-index: 5;
-  max-width: 900px; /* Set a maximum width if necessary */
-  margin:initial; /* Center the container on the page */
+  max-width: 900px;
+  height: 132%;
+  z-index: 1;
 
 }
 
@@ -197,23 +222,23 @@ header .topPage {
 
 
 form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 7% 5rem;
-  overflow: hidden;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1% 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    top: -20%;
+  }
 
 form.sign-up-form {
   opacity: 0;
-  z-index: 1;
 }
 
 form.sign-in-form {
-  z-index: 2;
 }
 
 .title {
@@ -258,46 +283,6 @@ form.sign-in-form {
   font-weight: 400;
 }
 
-.btn {
-  display: inline-block;
-  padding: .9rem .9rem;
-  color: #ffffff ;
-  background-color: #64bcf4;
-  border-radius: 16px;
-  text-transform: capitalize;
-  transition: 0.3s;
-  border: none; /* Remove the border */
-
-}
-
-.btn:hover {
-  background-color:#5bacdf;
-  transform: scale(1) ;
-}
-
-.panels-container {
-  position: absolute;
-  height: 80%;
-  width: 200%;
-  top: 0;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.container:before {
-    content: "";
-    position: absolute;
-    height: 2000px;
-    width: 2000px;
-    top: -10%;
-    right: 55%;
-    transform: translateY(-60%);
-    background-image: linear-gradient(-45deg, #f4f7f9 0%, #f1f8fc 100%);
-    border-radius: 70%;
-    z-index: 6;
-  }
-
 .image {
   width: 100%;
   transition: transform 1.1s ease-in-out;
@@ -310,16 +295,11 @@ form.sign-in-form {
   align-items: flex-end;
   justify-content: space-around;
   text-align: center;
-  z-index: 6;
 }
 
-.left-panel {
-  pointer-events: all;
-  padding: 7rem 68% 77rem 4%;
-}
 
 .file-input  {
-bottom: 32%;
+    bottom: 32%;
     background-color: #f0f0f0;
     margin: 10px 0;
     width: 179px; /* Set a fixed width for a square shape */
@@ -333,8 +313,7 @@ bottom: 32%;
 border-radius: 300%;
   }
   
- 
-  
+
   .file-input input {
     background: none;
     outline: none;
@@ -390,7 +369,7 @@ border-radius: 300%;
   
 
 .bio-input {
-  bottom: 28%;
+  bottom: 22%;
   background-color: #f0f0f0;
   margin: 10px 0;
   width: 230px;
