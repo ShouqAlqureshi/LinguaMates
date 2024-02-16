@@ -1,0 +1,86 @@
+<style>
+
+
+  .div {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0auto;
+    padding: 0px;
+     background-color:  #f1f8fc;
+  }
+  .h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .div-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     background-color:  #f1f8fc;
+  }
+  .div-3 {
+    margin-bottom: 50px;
+    width: calc(33% - 20px);
+    
+  }
+  .img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 0px;
+    padding-top: 50%;
+    background-color:  #f1f8fc;
+  }
+  .div-4 {
+    padding: 0px;
+    text-align: center;
+     background-color:  #f1f8fc;
+
+   
+  }
+  .h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .p {
+    margin-bottom: 5px;
+  }
+  .button {
+    all: unset;
+    background-color: skyblue; 
+    border-bottom: none;
+    border-color: var(--mainColor);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .div-5 {
+    margin-bottom: 30px;
+    width: calc(33% - 20px);
+     background-color:  #f1f8fc;
+  }
+  .div-6 {
+    padding: 0px;
+     text-align: center;
+      background-color:  #f1f8fc;
+  }
+  .div-7 {
+    margin-bottom: 30px;
+    width: calc(33% - 20px);
+     background-color:  #f1f8fc;
+  }
+  .div-8 {
+    padding: 0px;
+     text-align: center;
+      background-color:  #f1f8fc;
+  }
+</style>
