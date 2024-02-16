@@ -9,6 +9,15 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">      
       <title>lenguaMates</title>
       <link rel="stylesheet" href="NS_request.css">
+
+      <script type="text/javascript">
+        function goToNewPage() {
+          var url = document.getElementById('list').value;
+          if(url !== 'none') {
+            window.location = url;
+          }
+        }
+      </script>
     </head>
     <body>
       <div class="big-wrapper light">
@@ -47,12 +56,15 @@
         <div class="container">
             <h1>Requests</h1>
             <p id="All">
-              <select name="categories">
-              <option value="All" selected>All</option>
-              <option value="NS_homepage.html">accepted</option>
-              <option value="declined">declined</option>
-              <option value="waiting">waiting</option>
+
+              <select id="list" onchange="goToNewPage()">
+                <option value="NS_request.html" selected>All</option>
+                <option value="NS_request_accepted.html">accepted</option>
+                <option value="NS_request_declined.html">declined</option>
+                <option value="NS_request_waiting.html">waiting</option>
               </select>
+              <button onclick="goToNewPage()"></button>
+
             </p>
             <div class="requestsboard">
               <table>
@@ -115,6 +127,39 @@
                     </td>
                     <td><a href="confirmation.html"><button id="save-btn">Save</button></a></td>
                 </tr> 
+
+                <tr>
+                  
+                  <td><img src="requestIcon.png" alt="request Icon" class="requestIcon"></td>
+                  <td>eng</td>
+                  <td>beggener</td>
+                  <td>12/1/2024</td>
+                  <td>60 min</td> 
+                  <td >
+                    <select name="statues">
+                    <option value="accept">accept</option>
+                    <option value="decline">decline</option>
+                    <option value="waiting"selected>waiting</option>
+                    </select>
+                  </td>
+                  <td><a href="confirmation.html"><button id="save-btn">Save</button></a></td>
+              </tr>  
+              <tr >
+                
+                  <td><img src="requestIcon.png" alt="request Icon" class="requestIcon"></td>
+                  <td>eng</td>
+                  <td>elemntry</td>
+                  <td>20/1/2024</td>
+                  <td>120 min</td> 
+                  <td>
+                    <select name="statues" >
+                    <option value="accept">accept</option>
+                    <option value="decline">decline</option>
+                    <option value="waiting"selected>waiting</option>
+                    </select>
+                  </td>
+                  <td><a href="confirmation.html"><button id="save-btn">Save</button></a></td>
+              </tr> 
               </table>
                
           </div>
