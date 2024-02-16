@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://kit.fontawesome.com/9eeac525af.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="footer.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">
+<title> Personal Profile Editing</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    } 
+    
+    #profile-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+}
+
+#user-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #ddd; /* Placeholder color */
+    margin-right: 120px; /* Adjust margin to control distance from the right */
+}
+
+#bio-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 20px;
+    margin-left: 20px; /* Adjust margin to control distance from the left */
+}
+
+    #info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .info-input, .info-radio {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        width: 500px;
+        font-size: 20px; /* Change font size */
+        display: block;
+    }
+
+    .info-input input[type="text"], 
+    .info-input input[type="email"], 
+    .info-input input[type="password"],
+    .info-input input[type="number"],
+    .info-input input[type="tel"]
+{
+        background: none;
+        outline: none;
+        border: none;
+        line-height: 1;
+        font-weight: 200;
+        font-size: 20px;
+        color: #333;
+        width: 75%;
+    }
+    #bio-container textarea {
+        background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 200;
+  font-size: 1.1rem;
+  height: 150px;
+  width: 420px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+
+}
+    .info-input label, #radio{
+        display: inline;
+        font-weight: bold;
+    }
+    .info-radio label{
+        display: inline;
+width: 200px;
+    }
+    #edit-btn {
+        padding: 10px;
+        background-color: #e7e7f0;
+        color: rgb(22, 46, 86);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }    
+
+    #edit-btn:hover {
+        background-color: #5bacdf; 
+        color: white;
+    }
+</style>
+</head>
+<body>
+    
+<div class="big-wrapper light">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="Homepage.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+            </div>
+          
+            <div class="links">
+                <ul>
+                    <li>
+                      <style>
+                        .round-image {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%; /* This will make the image round */
+                            border: 2px solid #333; /* This will create a dark outline */
+                            
+                        }
+                    </style>
+                    
+                        <a href="learnerProfile.html">
+                          <img src="C:\Users\Raghad\Desktop\WebPagesByRagAli\PP.png" alt="User" class="round-image">
+                        </a>
+                    </li>
+                    <li><a href="Homepage.html">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+  
+    <div id="profile-container">
+        <div id="user-image">
+            <img src="C:\Users\Raghad\Desktop\WebPagesByRagAli\PP.png" alt="User Profile Image">
+             <input type="file" id="profile-photo" name="profile-photo" accept="image/*" />
+        </div>
+        <div id="bio-container">
+            <form action="/update_bio.php" method="POST">
+                <label for="bio"> Edit your bio</label><br>
+                <textarea id="bio" name="bio">I have a BA in English and have a strong passion for teaching and communication. I am fluent in spoken and written English, and I am committed to fostering a dynamic and engaging learning environment.</textarea><br>
+            </form>
+        </div>
+    </div>
+    
+    <div id="info-container">
+        <form action="/update_info.php" method="POST" class="info-form">
+            <div class="info-input">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" value="Omar">
+            </div>
+            <div class="info-input">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" value="Ali">
+            </div>
+            <div class="info-input">
+                <label for="age">Age:</label>
+                <input type="number" id="age" value="34">
+            </div>
+            <div class="info-radio">
+                <label for="gender" id ="radio">Gender:</label>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label><br>
+            </div>
+            <div class="info-input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="Omar443322@example.com">
+            </div>
+            <div class="info-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" value="1234">
+            </div>
+            <div class="info-input">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" value="966-37941348">
+            </div>
+            <div class="info-input">
+                <label for="city">City:</label>
+                <input type="text" id="city" value="Riyadh">
+            </div>
+        </form>
+        <a href="confirmationPN.html"><button id="edit-btn">Save</button></a>
+    </div>
+</div>
+  
+<footer>
+    <div class="footerContainer">
+        <div class="socialicon">
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=ar"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="footerNav">
+        <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact us</a></li>
+        </ul>
+    </div>
+</footer>
+<div class="footerBottom">
+    <p>CopyRight &copy;2024;  </p>
+</div>
+</body>
+</html>
