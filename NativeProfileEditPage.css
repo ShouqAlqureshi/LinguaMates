@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} 
+
+#profile-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+}
+
+#user-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #ddd; /* Placeholder color */
+    margin-right: -120px; /* Adjust margin to control distance from the right */
+}
+
+#profile-photo {
+    margin-left: 120px; /* Ensure the input field aligns with the user image */
+}
+
+.round-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* This will make the image round */
+    border: 2px solid #333; /* This will create a dark outline */
+}
+
+#bio-container {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 20px;
+    margin-left: 20px; /* Adjust margin to control distance from the left */
+}
+
+#info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-input, .info-radio {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 20px; /* Change font size */
+    display: block;
+}
+
+.info-input input[type="text"], 
+.info-input input[type="email"], 
+.info-input input[type="password"],
+.info-input input[type="number"],
+.info-input input[type="tel"]
+{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 20px;
+    color: #333;
+    width: 75%;
+}
+
+#bio-container textarea {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 200;
+    font-size: 1.1rem;
+    height: 150px;
+    width: 420px;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.info-input label, #radio{
+    display: inline;
+    font-weight: bold;
+}
+
+.info-radio label {
+    display: inline;
+    width: 200px;
+}
+
+#Save-btn {
+    padding: 10px;
+    background-color: #e7e7f0;
+    color: rgb(22, 46, 86);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}    
+
+#Save-btn:hover {
+    background-color: #5bacdf; 
+    color: white;
+}
