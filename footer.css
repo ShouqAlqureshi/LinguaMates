@@ -81,9 +81,9 @@ header .container {
 }
 
 .logo img {
-  width: 40px;
-  margin-right: 0.6rem;
-  margin-top: -0.6rem;
+  width: 280px;
+  margin-right: -20px;
+  margin-top: -5px;
 }
 
 .logo h3 {
