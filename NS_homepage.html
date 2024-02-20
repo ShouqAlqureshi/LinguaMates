@@ -7,10 +7,17 @@
 <script src="https://kit.fontawesome.com/9eeac525af.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="footer.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">
-
-
+<style>
+  .round-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; /* This will make the image round */
+      border: 2px solid #333; /* This will create a dark outline */
+      
+  }
+</style>
 <link href="NS_homepage.css" rel="stylesheet">
-<title> home page </title>
+<title> native speaker home page </title>
 </head>
 <body>
     
@@ -27,16 +34,6 @@
           <div class="links">
               <ul>
                   <li>
-                    <style>
-                      .round-image {
-                          width: 60px;
-                          height: 60px;
-                          border-radius: 50%; /* This will make the image round */
-                          border: 2px solid #333; /* This will create a dark outline */
-                          
-                      }
-                  </style>
-                  
                       <a href="Nprofilepage.html">
                         <img src="user.jpg" alt="User" class="round-image">
                       </a>
@@ -52,15 +49,15 @@
     
     <ul class="menu">
       <li id="avatar"><img  src="user.jpg" alt="avatar">Name</li>
-      <div id="usecases">
-      <li><a href="NS_request.html">Requests</a></li>
-      <li id="Sessions"><a href="#">Sessions</a>
-        <ul id="menu2">
-        <li class="dropdown"><a href="currentsessionsPage.html">Current Sessions</a></li>
-        <li class="dropdown"><a href="previousSessionsPage.html">Previous Sessions</a></li>
-        </ul>
-      </li>
-    </div>
+        <div id="usecases">
+            <li><a href="NS_request.html">Requests</a></li>
+            <li id="Sessions"><a href="#">Sessions</a>
+                <ul id="menu2">
+                    <li class="dropdown"><a href="currentsessionsPage.html">Current Sessions</a></li>
+                    <li class="dropdown"><a href="previousSessionsPage.html">Previous Sessions</a></li>
+                </ul>
+            </li>
+        </div>
     </ul>
   </div>
           
@@ -77,15 +74,14 @@
       
     <div class="footerNav">
         <ul>
-            <li><a href="">About us</a></li>
-            <li><a href="">Contact us</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="mailto:lingumates@gmail.com">Contact us</a></li>
         </ul>
     </div>
     
-    
-    </div>
+    </footer>
+ </div>   
 
-</footer>
 <div class="footerBottom">
     <p>CopyRight &copy;2024;  </p>
 </div>

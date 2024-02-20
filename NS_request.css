@@ -32,7 +32,7 @@ body {
     background-color: #EEEEEE;
     color: #000000;
   }
-  #save-btn {
+  .save-btn {
     padding: 10px 14px;
     background-color: #e7e7f0;
     color: rgb(22, 46, 86);
@@ -42,7 +42,7 @@ body {
     transition: all 0.3s;
   }
   
-  #save-btn:hover {
+  .save-btn:hover {
     background-color: #5bacdf;
     color: white; 
     transform: scale(1.1);
