@@ -30,7 +30,7 @@ input {
     position: relative;
     padding: 1.7rem 0 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 109vh !important;
     overflow: hidden;
     background-color: var(--backgroundColor);
     display: flex;
@@ -148,19 +148,13 @@ form {
 .panels-container {
   position: absolute;
   height: 118%;
-  width: 49%;
+  width: 39%;
   top: 0;
   left: 76px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content:center;
 }
-
-.signup-phrases{
-  padding: 10px; 
-display: center;;
-}
-
 
 .file-input  {
   
@@ -213,7 +207,7 @@ border-radius: 300%;
   
   .file-input .profile-name {
     margin-top: 170px;
-    color: var(--darkTwo);
+    color:var(--darkTwo);
     font-size: 18px;
   }
  
