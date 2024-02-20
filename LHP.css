@@ -236,5 +236,62 @@ button {
         max-width: calc(30% - 20px); 
     }
 }
+.container1 {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#button1 {
+  background-color: #8bbef5;
+  color: #fff;
+  padding: 10px 30px; /* Increased padding for wider button */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Change display to block to center the button */
+  margin: 0 auto;
+}
+
+#button1:hover {
+  background-color: #0056b3;
+}
+
 
 

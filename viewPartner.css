@@ -1,0 +1,120 @@
+<style>
+
+
+  .div {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0auto;
+    padding: 0px;
+     background-color:  #f1f8fc;
+  }
+  .h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .div-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+     background-color:  #f1f8fc;
+  }
+  .div-3 {
+    margin-bottom: 50px;
+    width: calc(33% - 20px);
+    
+  }
+  .img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 0px;
+    padding-top: 50%;
+    background-color:  #f1f8fc;
+  }
+  .div-4 {
+    padding: 0px;
+    text-align: center;
+     background-color:  #f1f8fc;
+
+   
+  }
+  .h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .p {
+    margin-bottom: 5px;
+  }
+
+  .button {
+    background-color: skyblue; /* Change the color to your desired color */
+    color: #fff; /* Change the text color to white */
+    margin-top: 20px;
+    display: block;
+    padding: 20px 40px; /* Increase the padding to make the button bigger */
+    font-size: 16px; /* Increase the font size */
+    border: none; /* Remove the border if you want */
+    border-radius: 20px; /* Add some border radius for rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #5bacdf;
+  color: white; 
+  transform: scale(1.1);
+  border-radius: 20px;  /* Change the color on hover */
+}
+  .div-5 {
+    margin-bottom: 30px;
+    width: calc(33% - 20px);
+     background-color:  #f1f8fc;
+  }
+  .div-6 {
+    padding: 60px;
+    border-radius: 10px;
+    background: #FFF;
+    color: #414f7b;
+    margin: 10px;
+    box-shadow: -1px 1px 20px 2px #00000030;
+    text-align: center;
+   background-color:  #f1f8fc;
+  }
+  .div-7 {
+    margin-bottom: 30px;
+    width: calc(33% - 20px);
+     background-color:  #f1f8fc;
+  }
+  .div-8 {
+    padding: 0px;
+     text-align: center;
+      background-color:  #f1f8fc;
+  }
+  .box1 {
+    flex: 1 1 300px; 
+    max-width: 400px;
+    background-color: #fff; /* Set background color to white */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 20px; /* Add border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    width: 35%; /* Adjust the width as needed */
+    height: 700px;
+    margin: 0 auto;
+    }
+    .row1 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color:  #f1f8fc;
+
+      gap: 20px; /* Adjust the gap between cards */
+    }
+    
+    
+    
+    /* Adjust the styles of the card content as needed */
+    
+</style>

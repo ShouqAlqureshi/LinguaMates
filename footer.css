@@ -81,7 +81,7 @@ header .container {
 }
 
 .logo img {
-  width: 280px;
+  width: 260px;
   margin-right: -20px;
   margin-top: -5px;
 }
@@ -102,8 +102,9 @@ header .container {
 
 .links a {
   color: #aaa;
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
   display: inline-block;
+  font-size: 20px;
   transition: 0.3s;
 }
 
@@ -177,7 +178,7 @@ footer{
 
 .socialicon{
   display:flex ;
-  margin-bottom: 10px;
+  margin-top: 50px;
   justify-content: center;
 }
 .socialicon a{
@@ -232,7 +233,12 @@ background-color: #f1f8fc;
 }
 
 .footerBottom p{
-  color: #f1f8fc;
+  color: #45424b;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
 @media (max-width: 700px){
@@ -247,4 +253,69 @@ background-color: #f1f8fc;
 
   }
 }
-  
+
+/* Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start off-screen */
+  background-color: #ffffff;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+
+.sidebar h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+/* Show sidebar when active class is added */
+.sidebar.active {
+  left: 0;
+}
+
+/* Main Content */
+.content {
+  margin-left: 5px; /* Adjust margin to make space for the sidebar */
+  padding: 20px;
+    position: absolute; /* Position the content absolutely */
+    top: 0; /* Align content with the top of the page */
+    left: 0;
+}
+.content {
+  position: relative; /* Ensure the container is positioned relative */
+}
+
+button.toggle-button {
+  position: absolute; /* Position the button absolutely */
+  top: 20px; /* Adjust the top position */
+  left: 20px; /* Adjust the left position */
+  z-index: 999; /* Ensure it appears above other content */
+}
+.container {
+  padding: 20px;
+}
+
+.request-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+

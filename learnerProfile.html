@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://kit.fontawesome.com/9eeac525af.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="footer.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">
+
+
+<title> Personal Profile</title>
+<style>
+    body {
+          margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f8fc;
+            padding-bottom: 50px; /* Adjust space for the footer */
+        } 
+    
+        #profile-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        #user-image {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* This will make the image round */
+            background-color: #ddd; /* Placeholder color */
+        }
+
+        #bio-container {
+            background-color: #f9f9f9;
+            padding: 50px;
+            border-radius: 10px;
+            width: 600px; /* Adjusted width */
+            height: 200px;
+            margin-left: -500px; /* Added margin to separate from the picture */
+            font-size: 20px; /* Change font size */
+        }
+
+        #info-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            background-color: #f1f8fc;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            width: 500px;
+            font-size: 20px; /* Change font size */
+        }
+
+        #edit-btn {
+            padding: 15px;
+            background-color: #aaa;
+            color: #f1f8fc;
+            border: none;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px; /* Change font size */
+        }
+        #Delete-btn {
+            padding: 15px;
+            background-color: #aaa;
+            color: #ca1b1b;
+            border: none;
+            width: 100px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px; /* Change font size */
+        }
+        .button-container {
+    display: flex;
+    justify-content:20px; /* Adjust the spacing between buttons */
+}
+
+#edit-btn {
+    background-color: #aaa;
+    color: #ca1b1b;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#Delete-btn {
+    background-color: #b41313;
+    color: #d2d0d0;
+    padding: 10px 20px;
+    border: none;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#edit-btn:hover, #Delete-btn:hover {
+    background-color: #b41313;
+    color: #d2d0d0;
+}
+      
+</style>
+</head>
+<body>
+    
+        <div class="big-wrapper light">
+  
+          <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="Homepage.html">
+                        <img src="logo.png" alt="Logo">
+                    </a>
+                </div>
+              
+                <div class="links">
+                    <ul>
+                        
+                        <li><a href="Homepage.html">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+          <div id="profile-container">
+
+            <div id="user-image">
+              <img src="user.png" alt="User Profile Image" id="user-image">
+            </div>
+    
+           
+    
+        </div>
+    
+        <div id="info-container">
+    
+            <div class="info-box">
+                <strong>First Name:</strong> Omar
+            </div>
+    
+            <div class="info-box">
+                <strong>Last Name:</strong> Ali
+            </div>
+    
+            <div class="info-box">
+                <strong>Email:</strong> Omar443322@example.com
+            </div>
+<div class="info-box">
+                <strong>Password:</strong> *****
+            </div>
+    
+            <div class="info-box">
+                <strong>location</strong> ksa
+            </div>
+    
+            <div class="info-box">
+                <strong>City:</strong> Riyadh
+            </div>
+
+            <div class="button-container">
+    <button id="edit-btn"><a href="editProfile.html">Edit</a></button>
+    <button id="Delete-btn"><a href="DeleteAcc.html">Delete</a></button>
+</div>
+
+
+        </div>
+
+
+
+
+
+
+          
+        <footer>
+          <div class="footerContainer">
+              <div class="socialicon">
+                  <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/?hl=ar"><i class="fab fa-instagram"></i></a>
+                  <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+              </div>
+          </div>
+          
+          <div class="footerNav">
+              <ul>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Contact us</a></li>
+              </ul>
+          </div>
+      </footer>
+      <div class="footerBottom">
+          <p>CopyRight &copy;2024  </p>
+      </div>
+</body>
+
+</html>

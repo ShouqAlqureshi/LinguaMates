@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+  .body{ position: relative;
+   background-color: #f1f8fc;
+            padding: 50px;
+            border-radius: 10px;
+            width: 600px; /* Adjusted width */
+            height: 200px;
+            margin-left: -500px; /* Added margin to separate from the picture */
+            font-size: 20px; /* Change font size */
+             --backgroundColor: #f1f8fc;
+  }
+  .div {
+    align-items: center;
+    background-color: #fff;
+    column-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    row-gap: 20px;
+    margin-bottom: 101px;
+    padding: 20px 20px 182px;
+  }
+  .div-2 {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    row-gap: 10px;
+    width: 300px;
+    
+  }
+
+  .button {
+    background-color: #b5b4b7; /* Change the color to your desired color */
+    color: #fff; /* Change the text color to white */
+    margin-top: 40px;
+    padding: 20px 40px; /* Increase the padding to make the button bigger */
+    font-size: 16px; /* Increase the font size */
+    border: none; /* Remove the border if you want */
+    border-radius: 20px; /* Add some border radius for rounded corners */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #5bacdf;
+  color: white; 
+  transform: scale(1.1);
+  border-radius: 20px;  /* Change the color on hover */
+}
+  .label {
+    font-weight: 600;
+     text-align: center;
+     line-height: 35px;
+    color: #acacac;
+    display: inline-block;
+
+      
+  }
+  .select {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-left: 1px solid rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-radius: 4px;
+    border-right: 1px solid rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-style: solid;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-top-color: rgb(204, 204, 204);
+    border-top-left-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-width: 1px;
+    padding: 10px;
+     text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+  }
+  .div-3 {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    row-gap: 10px;
+    width: 300px;
+  }
+  .div-4 {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    row-gap: 10px;
+    width: 300px;
+  }
+  .div-5 {
+    column-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    row-gap: 10px;
+    width: 300px;
+  }
+  .div-6 {
+    text-decoration-line: underline;
+    flex-grow: 1;
+  }
+  .form-box {
+  background-color: #fff; /* Set background color to white */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 20px; /* Add border radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  width: 35%; /* Adjust the width as needed */
+  height: 680px;
+  margin: 0 auto;
+  }
