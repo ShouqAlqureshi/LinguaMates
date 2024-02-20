@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+      font-family: Arial, sans-serif;
+  }  
+  h1 {
+      color: #000000;
+  }
+
+  .table-container {
+      display: flex;
+      justify-content: center;
+  }
+
+  table {
+      width: 80%; /* Adjust the width of the table as needed */
+      border-collapse: collapse;
+      background-color: #5bacdf;
+      box-shadow: 0px 0px 10px #fff9f9;
+      margin-top: 20px;
+  }
+
+  th, td {
+      padding: 20px; /* Adjust padding for cells as needed */
+      text-align: left;
+  }
+
+  th {
+      background-color: #EEEEEE;
+      color: #000000;
+  }
+
+  td {
+      background-color: #EEEEEE;
+      color: #000000;
+  }
+
+  .circular-image{
+    width: 100px; /* Adjust the width of the image as needed */
+    height: 100px; /* Adjust the height of the image as needed */
+    border-radius:50% ; /* Create a circular shape for the image */
+  }
+
+  
+  .round-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; /* This will make the image round */
+      border: 2px solid #333; /* This will create a dark outline */
+     }
+    
+#start-btn {
+padding: 10px 14px;
+background-color: #e7e7f0;
+color: rgb(22, 46, 86);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 20px;
+}
+
+#start-btn:hover {
+background-color: #5bacdf; /* Change to desired hover background color */
+color: white; /* Change to desired hover text color */
+}

@@ -24,13 +24,7 @@ input {
   height: 100%;
   overflow: hidden;
 }
-img {
-  width: 100%;
-}
 
-a {
-  text-decoration: none;
-}
 
 .big-wrapper {
     position: relative;
@@ -43,97 +37,7 @@ a {
     flex-direction: column;
     justify-content: space-between;
   }
-.topPage {
-  position: relative;
-  max-width: 81rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
 
-header {
-  position: relative;
-}
-
-header .topPage {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.overlay {
-  display: none;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.logo img {
-  width: 40px;
-  margin-right: 0.6rem;
-  margin-top: -0.6rem;
-}
-
-.logo h3 {
-  color: var(--darkTwo);
-  font-size: 1.55rem;
-  line-height: 1.2;
-  font-weight: 700;
-}
-
-.links ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
-
-.links a {
-  color: #919191;
-  margin-left: 4.5rem;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.links a:hover {
-  color: var(--hoverColor);
-  transform: scale(1.05);
-}
-
-
-
-.hamburger-menu {
-  position: relative;
-  z-index: 99;
-  width: 2rem;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  display: none;
-}
-
-.hamburger-menu .bar {
-  position: relative;
-  width: 100%;
-  height: 3px;
-  background-color: var(--darkTwo);
-  border-radius: 3px;
-  transition: 0.5s;
-}
-
-
-
-.container1 {
-  position: relative;
-  width: 100%;
-  background-color: #fff;
-  min-height: 20vh;
-  overflow: hidden;
-}
 
 
 .forms-container {
@@ -226,18 +130,19 @@ form {
 .btn {
   padding: 10px 14px;
   background-color: #e7e7f0;
-  color: rgb(22, 46, 86);
+  color: #312f3a;
   border: none;
-  border-radius: 50px;
-  font-size: 19px;
+  border-radius: 5px;
+  font-size: 20px;
   transition: all 0.3s;
+  margin:5px;  
 }
 
 .btn:hover {
   background-color: #5bacdf;
   color: white; 
   transform: scale(1.1);
-  border-radius: 50px;
+  border-radius: 50px; 
 }
 
 .panels-container {
@@ -250,6 +155,7 @@ form {
   grid-template-columns: repeat(2, 1fr);
   align-content:center;
 }
+
 .signup-phrases{
   padding: 10px; 
 display: center;;
