@@ -6,68 +6,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script src="https://kit.fontawesome.com/9eeac525af.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="footer.css" />
+<link rel="stylesheet" href="PreviousSessionsPage.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-GLhlTQ8i1IIVoaFaLcl5wjKOBn0Kk/RUdFEae83a6ho1NFwnfA5qBLF85fwApQ" crossorigin="anonymous">
 
-<style>
-     body {
-          margin: 0;
-            font-family: Arial, sans-serif;
-           
-        }  
-        h1 {
-            color: #000000;
-        }
-
-        .table-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        table {
-            width: 80%; /* Adjust the width of the table as needed */
-            border-collapse: collapse;
-            background-color: #5bacdf;
-            box-shadow: 0px 0px 10px #fff9f9;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 20px; /* Adjust padding for cells as needed */
-            text-align: left;
-        }
-
-        th {
-            background-color: #EEEEEE;
-            color: #000000;
-        }
-
-        td {
-            background-color: #EEEEEE;
-            color: #000000;
-        }
-
-        #image{
-          width: 100px; /* Adjust the width of the image as needed */
-          height: 100px; /* Adjust the height of the image as needed */
-          border-radius:50%; /* Create a circular shape for the image */
-        }
-
-        .review-text {
-            max-height: 100px; /* Limit the height of the review text */
-            overflow-y: auto; /* Enable vertical scrolling */
-        }
-
-        button {
-            background-color: #B3E5FC;
-            color: rgb(0, 0, 0);
-            padding: 10px 14px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px; /* Rounded corners for the button */
-            font-size: 20px;
-        }
-
-</style>
 <title>previousSessions</title>
 </head>
 <body>
@@ -85,18 +26,8 @@
                 <div class="links">
                     <ul>
                         <li>
-                          <style>
-                            .round-image {
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 50%; /* This will make the image round */
-                                border: 2px solid #333; /* This will create a dark outline */
-                                
-                            }
-                        </style>
-                        
-                            <a href="learnerProfile.html">
-                              <img src="C:\Users\Raghad\Desktop\WebPagesByRagAli\PP.png" alt="User" class="round-image">
+                             <a href="learnerProfile.html">
+                              <img src="user.jpg" alt="User" class="round-image">
                             </a>
                         </li>
                         <li><a href="Homepage.html">Sign out</a></li>
@@ -116,29 +47,29 @@
                 <th>Time</th>
                 <th>Learner</th>
                 <th>Review</th>
-                <th>Rating (out of 5)</th>
+                <th>Rating</th>
             </tr>
         </thead>
         <tbody>
 
             <tr>
-              <td><div id="image"><img src="C:\Users\Raghad\Desktop\WebPagesByRagAli\sicon.jpg" alt="Unified Picture"></div></td>
+              <td><img src="sicon.jpg" alt="Unified Picture" class="circular-image"></td>
                 <td>English</td>
                 <td>2024-02-05</td>
                 <td>10:00 AM</td>
                 <td>Bander Ali</td>
                 <td><div class="review-text">Great lesson! Really enjoyed it.</div></td>
-                <td>4.5</td> <!-- Placeholder rating -->
+                <td>4.5/5</td> <!-- Placeholder rating -->
             </tr>
 
             <tr>
-                <td><div id="image"><img src="C:\Users\Raghad\Desktop\WebPagesByRagAli\sicon.jpg" alt="Unified Picture"></div></td>
-                <td>Spanish</td>
+                <td><img src="sicon.jpg" alt="Unified Picture" class="circular-image"></td>
+                <td>English</td>
                 <td>2024-02-06</td>
                 <td>02:30 PM</td>
                 <td>Ahmad Khalid</td>
                 <td><div class="review-text">The lesson was very informative. I learned a lot.</div></td>
-                <td>4.8</td> <!-- Placeholder rating -->
+                <td>4.8/5</td> <!-- Placeholder rating -->
             </tr>
             
 
