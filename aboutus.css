@@ -80,7 +80,7 @@ h2.aboutusTitle {
     color: #333;
     text-align: center;
     cursor: pointer;
-    transition: color 0.5s transform 0.2s ; 
+    transition: color 0.5s  ; 
     
 }
 h2:hover {
